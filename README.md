@@ -2,7 +2,7 @@
 <img src="ico.ico" width="128">
 </p>
 
-<h1 align="center">Ultimate Secure Gateway</h1>
+<h1 align="center">SecureGateway</h1>
 
 <p align="center">
 A lightweight Java SOCKS5 Gateway inspired by the classic JAP / JonDo architecture.
@@ -11,12 +11,10 @@ A lightweight Java SOCKS5 Gateway inspired by the classic JAP / JonDo architectu
 <p align="center">
 
 ![Java](https://img.shields.io/badge/Java-8+-orange)
-
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue)
-
 ![Version](https://img.shields.io/badge/Version-v00.15.018-green)
-
-![License](https://img.shields.io/badge/License-MIT-red)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-success)
 
 </p>
 
@@ -24,58 +22,72 @@ A lightweight Java SOCKS5 Gateway inspired by the classic JAP / JonDo architectu
 
 # Overview
 
-Ultimate Secure Gateway is a Java desktop application providing a local SOCKS5 gateway capable of forwarding traffic through an embedded Tor instance or an external SOCKS5 proxy.
+SecureGateway is an open-source Java desktop application that provides a lightweight SOCKS5 gateway capable of forwarding network traffic through an embedded Tor instance, an external Tor service, or any compatible SOCKS5 proxy.
 
-Designed as a lightweight educational project inspired by the classic JAP/JonDo interface.
+Designed as an educational project, it demonstrates Java networking, SOCKS5 protocol implementation, multithreaded socket programming, and desktop application development with Java Swing.
 
 ---
 
 # Features
 
-✅ Integrated Tor Mode
+✅ Embedded Tor Mode
 
 ✅ External Tor Mode
 
 ✅ Custom SOCKS5 Proxy
 
-✅ Live Network Statistics
+✅ Automatic Tor Launcher
 
-✅ Real-Time Transfer Speed
+✅ SOCKS5 Gateway
 
-✅ Configuration Manager
+✅ Real-Time Traffic Statistics
 
-✅ Embedded Tor Launcher
+✅ Live Connection Speed
 
-✅ Runtime Logging
-
-✅ Modern Swing GUI
-
-✅ SOCKS5 Protocol Support
+✅ Runtime Connection Logs
 
 ✅ Automatic Health Checks
 
+✅ Configurable Gateway Settings
+
 ✅ Configurable Listening Port
 
-✅ Connection Timeout Settings
+✅ Adjustable Connection Timeout
+
+✅ Modern Java Swing Interface
+
+✅ Lightweight & Portable
 
 ---
 
-# Screenshots
+# Screenshot
 
-```
+<p align="center">
+<img src="https://raw.githubusercontent.com/NoSec2023/SecureGateway/refs/heads/main/Screenshot%202026-06-30%20214212.png" width="900">
+</p>
 
-ضع هنا صورة الواجهة
+---
 
-```
+# Download
+
+Download the latest version from Google Drive.
+
+https://drive.google.com/file/d/1xqp_3q_O5cRa0Kwk61hWfjDK9ienTO0R/view?usp=sharing
 
 ---
 
 # Installation
 
-```bash
-git clone https://github.com/USERNAME/UltimateSecureGateway.git
+Clone the repository
 
-cd UltimateSecureGateway
+```bash
+git clone https://github.com/NoSec2023/SecureGateway.git
+```
+
+Enter the project
+
+```bash
+cd SecureGateway
 ```
 
 Compile
@@ -95,11 +107,13 @@ java UltimateSecureGateway
 # Folder Structure
 
 ```
-UltimateSecureGateway/
+SecureGateway/
 │
 ├── UltimateSecureGateway.java
 ├── gateway_config.properties
-├── tor.exe
+├── runtime_bin/
+│   ├── tor.exe
+│   └── tor_data/
 ├── ico.ico
 ├── btc.png
 └── README.md
@@ -112,31 +126,35 @@ UltimateSecureGateway/
 | Option | Default |
 |---------|----------|
 | Listen Port | 6300 |
-| Tor Port | 9050 |
-| Timeout | 15000 ms |
+| Target SOCKS Port | 9050 |
+| Connection Timeout | 15000 ms |
 
 ---
 
-# Versions
+# Version History
 
 ## v00.15.018
 
-- Improved GUI
-- Added Tor launcher
-- Added custom proxy mode
-- Added traffic monitor
-- Added statistics panel
-- Added donation window
+- Initial public release
+- Embedded Tor support
+- External Tor support
+- Custom SOCKS5 proxy support
+- Automatic health checks
+- Runtime logging
+- Real-time traffic monitor
+- Speed calculation
+- Configuration manager
+- Java Swing graphical interface
 
 ---
 
 # Bitcoin Donation
 
-If you'd like to support development, you can donate Bitcoin.
+If you enjoy this project and would like to support future development, consider donating Bitcoin.
 
-Address
+**Bitcoin Address**
 
-```
+```text
 bc1q5h9sq4jf7tmca42r3c53ahrsa08ev6u7menpkp
 ```
 
@@ -148,12 +166,32 @@ btc.png
 
 ---
 
+# Disclaimer
+
+SecureGateway is intended for educational, research, and development purposes only.
+
+The authors assume no responsibility for misuse or illegal use of this software. Users are solely responsible for complying with applicable laws and regulations.
+
+---
+
 # License
 
-MIT License
+This project is currently distributed **without a license**.
+
+Unless explicit permission is granted by the author, all rights are reserved.
+
+---
+
+# Credits
+
+Inspired by the classic **JAP / JonDo** anonymous proxy architecture.
+
+Built with ❤️ using Java.
 
 ---
 
 <p align="center">
-Made with ❤️ in Java
+
+⭐ If you like this project, don't forget to leave a star on GitHub!
+
 </p>
